@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazik Global</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mazik Global</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Mazik Global!</h2>
+            <p>Your global partner for innovative solutions.</p>
+            <a href="#services" class="btn">Our Services</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About Us</h2>
+            <p>Mazik Global is a leading provider of technology solutions. We specialize in delivering cutting-edge services to help businesses thrive in the digital age.</p>
+        </section>
+        
+        <section id="services" class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Consulting</h3>
+                    <p>Expert advice to drive your business forward.</p>
+                </div>
+                <div class="card">
+                    <h3>Technology Solutions</h3>
+                    <p>Innovative tech to meet your needs.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Management</h3>
+                    <p>Efficient project execution from start to finish.</p>
+                </div>
+                <div class="card">
+                    <h3>Support and Maintenance</h3>
+                    <p>Reliable support for your business operations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"Mazik Global transformed our business operations."</p>
+                    <h4>John Doe</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Outstanding service and support."</p>
+                    <h4>Jane Smith</h4>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formResponse"></p>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"16a27e3c6f9ff8703c447c3a1ce3cfabe","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+    
+    <footer>
+        <p>&copy; 2024 Mazik Global. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
